@@ -1,13 +1,11 @@
-package myappweb.controllers;
+package ru.stiv.spring_boot_1.controllers;
 
-import myappweb.models.User;
-import myappweb.service.ServiceUser;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
-
+import ru.stiv.spring_boot_1.models.User;
+import ru.stiv.spring_boot_1.service.ServiceUser;
 import javax.validation.Valid;
 
 @Controller
@@ -15,7 +13,7 @@ import javax.validation.Valid;
 public class UserController {
 
     private final ServiceUser serviceUser;
-    @Autowired()
+
     public UserController(ServiceUser serviceUser) {
         this.serviceUser = serviceUser;
     }

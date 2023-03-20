@@ -1,7 +1,9 @@
-package myappweb.service;
+package ru.stiv.spring_boot_1.service;
 
 import jakarta.validation.Valid;
-import myappweb.models.User;
+import ru.stiv.spring_boot_1.models.User;
+
+
 import java.util.List;
 
 public interface ServiceUser {

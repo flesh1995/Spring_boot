@@ -1,10 +1,10 @@
-package myappweb.DAO;
+package ru.stiv.spring_boot_1.DAO;
 
-import myappweb.models.User;
-import org.springframework.stereotype.Component;
-import org.springframework.transaction.annotation.Transactional;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.PersistenceContext;
+import org.springframework.stereotype.Component;
+import org.springframework.transaction.annotation.Transactional;
+import ru.stiv.spring_boot_1.models.User;
 import java.util.List;
 
 @Component

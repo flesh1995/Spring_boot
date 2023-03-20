@@ -1,10 +1,9 @@
-package myappweb.service;
+package ru.stiv.spring_boot_1.service;
 
-import myappweb.DAO.UserDao;
-import myappweb.models.User;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+import ru.stiv.spring_boot_1.DAO.UserDao;
+import ru.stiv.spring_boot_1.models.User;
 import javax.validation.Valid;
 import java.util.List;
 
@@ -13,7 +12,7 @@ import java.util.List;
 public class ServiceUserImpl implements ServiceUser {
 
     private final UserDao userDao;
-    @Autowired()
+
     public ServiceUserImpl(UserDao userDao) {
         this.userDao = userDao;
     }

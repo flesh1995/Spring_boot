@@ -1,6 +1,8 @@
-package myappweb.DAO;
+package ru.stiv.spring_boot_1.DAO;
 
-import myappweb.models.User;
+
+
+import ru.stiv.spring_boot_1.models.User;
 
 import java.util.List;
 
